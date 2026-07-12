@@ -1,9 +1,10 @@
 const btn = document.getElementById("giftBtn");
 const message = document.getElementById("message");
-
+const music = document.getElementById("birthdayMusic");
 btn.addEventListener("click", () => {
 
     btn.disabled = true;
+    music.play();
 
     confetti({
         particleCount: 300,
